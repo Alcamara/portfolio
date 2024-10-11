@@ -1,0 +1,12 @@
+.main{
+    width: 80%;
+    margin: auto 0;
+}
+
+.intro{
+    height: 100vh;
+}
+
+img.intro-image{
+    width: 100%;
+}
