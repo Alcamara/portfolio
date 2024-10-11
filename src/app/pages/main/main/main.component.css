@@ -1,12 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+
+:root{
+    font-size: 16px;
+}
+
 .main{
-    width: 80%;
-    margin: auto 0;
+    font-family: "Catamaran", sans-serif;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row{
+    justify-content: center;
 }
 
 .intro{
+    padding: 1rem;
+    font-size: 3rem;
     height: 100vh;
 }
 
-img.intro-image{
+.intro-summary{
+    margin: .5em 0;
+    min-width: 312px;
+    text-align: center;
+}
+
+.intro-image{
+    min-width: 336px;
+}
+
+.intro-image img{
     width: 100%;
 }
+
+@media (min-width: 1200px) {
+    .intro{
+        font-size: 4.5rem;
+        padding: 2.4rem;
+    }
+
+    .intro-summary{
+        margin: 2em 0;
+        min-width: 312px;
+        text-align: center;
+    }
+}
+
