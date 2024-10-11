@@ -1,3 +1,5 @@
+
+
 .navbar{
-    background-color: #7dc3e5;
+    background-color: var(--main-color);
 }

@@ -6,6 +6,7 @@
 
 .main{
     font-family: "Catamaran", sans-serif;
+    font-weight: 700;
     width: 90%;
     margin: 0 auto;
 }
@@ -15,15 +16,23 @@
 }
 
 .intro{
-    padding: 1rem;
     font-size: 3rem;
+    padding: 1rem;
     height: 100vh;
 }
 
 .intro-summary{
     margin: .5em 0;
     min-width: 312px;
-    text-align: center;
+    
+}
+
+.intro-summary_greet{
+    font-size: .4em;
+}
+
+.intro-summary_socials .row{
+    justify-content: start;
 }
 
 .intro-image{
@@ -32,6 +41,16 @@
 
 .intro-image img{
     width: 100%;
+    border-radius: .5rem;
+}
+
+.icon{
+    color: var(--main-color);
+}
+
+.btn{
+    font-weight: 500;
+    background-color: var(--secondary-color);
 }
 
 @media (min-width: 1200px) {
@@ -41,9 +60,14 @@
     }
 
     .intro-summary{
-        margin: 2em 0;
+        margin: 1em 0;
         min-width: 312px;
-        text-align: center;
+        
     }
+
+    .intro-summary_greet{
+        font-size: .5em;
+    }
+    
 }
 
