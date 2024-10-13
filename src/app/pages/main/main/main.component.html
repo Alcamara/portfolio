@@ -1,23 +1,20 @@
 <div class="main">
     <section class="intro">
         <div class="row">
-            <div class="col-8 intro-box intro-summary">
+            <div class="col-7 intro-box intro-summary">
                 <p class="intro-summary_greet">Hey, my name is</p>
-                <p>Al Camara.</p>
-                <p>I am a Software Developer </p>
+                <p><span class="name">Al Camara</span>.</p>
+                <p>I am a <span class="role">Software Developer </span></p>
                 <div class="intro-summary_socials">
                     <div class="row">
                         <div class="col-2">
-                            <i class="bi bi-linkedin icon"></i>
+                            <i (click)="onSMIClick('Linkedin')" class="bi bi-linkedin icon"></i>
                         </div>
                         <div class="col-2">
-                            <i class="bi bi-twitter-x icon"></i>
+                            <i (click)="onSMIClick('X')" class="bi bi-twitter-x icon"></i>
                         </div>
                         <div class="col-2">
-                            <i class="bi bi-github icon"></i>
-                        </div>
-                        <div class="col-2">
-                            <button class="btn">Contact Me</button>
+                            <i (click)="onSMIClick('Github')" class="bi bi-github icon"></i>
                         </div>
                     </div>
                 </div>
