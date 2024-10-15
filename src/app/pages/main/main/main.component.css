@@ -75,6 +75,27 @@
     background-color: var(--secondary-color);
 }
 
+/***
+ About
+***/
+
+.about{
+    font-size: 1.5rem;
+    padding: 1em 0;
+    background: linear-gradient(var(--main-color), white);
+    height: 500px;
+    border-radius: .8em .8em 0 0 ;
+}
+
+.about-summary p{
+    font-size: 1em;
+    font-weight: 400;
+    margin-top: 3em;
+    padding: 0;
+    border: 0;
+    line-height: 1;
+}
+
 @media (min-width: 1200px) {
     .intro{
         font-size: 4.5rem;
@@ -92,6 +113,24 @@
 
     .intro-summary_socials .row{
         justify-content: start;
+    }
+
+    /***
+        About
+    ***/
+
+    .about{
+        font-size: 2rem;
+        padding: 1em 0;
+    }
+
+    .about-summary p{
+        font-size: 1em;
+        text-align: center;
+        margin-top: 6rem;
+	    padding: 0;
+	    border: 0;
+        line-height: 1;
     }
     
 }
