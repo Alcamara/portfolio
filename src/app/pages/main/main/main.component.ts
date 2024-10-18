@@ -1,24 +1,35 @@
 import { Component } from '@angular/core';
-import { FormsModule, ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angular/forms';
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
+import { FormsModule, FormControl, FormGroup, Validators } from '@angular/forms';
+import { NgxTimelineModule, NgxTimelineEvent, NgxTimelineEventChangeSide } from '@frxjs/ngx-timeline';
 
 @Component({
   selector: 'app-main',
   standalone: true,
   imports: [
     FormsModule,
-    MatInputModule,
-    MatFormFieldModule,
-    MatButtonModule,
-    MatIconModule
+    NgxTimelineModule
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })
 export class MainComponent {
+
+  changeSide = NgxTimelineEventChangeSide.ALL
+
+  events: NgxTimelineEvent[] = [
+    {
+      id: 1,
+      title: 'Prime Digital Academy',
+      description: `Student Software Developer`,
+      timestamp: new Date('2022-07-23 08:00:00')
+    },
+    {
+      id: 2,
+      title: 'TurnKey Correction',
+      description: "Junior Software Developer",
+      timestamp: new Date('2023-04-17 09:00:00')
+    }
+  ];
 
   contactForm = new FormGroup({
     name: new FormControl("", [Validators.required]),

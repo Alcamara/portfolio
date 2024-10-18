@@ -32,7 +32,15 @@
         </div>
     </section>
     <section class="skills"></section>
-    <section class="job-history"></section>
+    <section class="job-history">
+        <ngx-timeline
+            [events]="events"
+            [changeSide]="changeSide"
+            [enableAnimation]="true"
+            [reverseOrder]="true"
+        >
+        </ngx-timeline>
+    </section>
     <section class="contact-me">
         <div class="container">
             <div class="row">
@@ -61,16 +69,13 @@
                         <span class="input-group-text">
                             <i class="bi bi-chat-right-text-fill"></i>
                         </span>
-                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                        <textarea class="form-control"></textarea>
                       </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-2">
-                    <button mat-fab extended type="button">
-                        send
-                        <mat-icon fontIcon="email"></mat-icon>
-                    </button>
+                    <button type="button" class="btn btn-primary">Primary</button>
                 </div>
             </div>
         </div>
