@@ -1,13 +1,30 @@
 import { Component } from '@angular/core';
+import { FormsModule, ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [],
+  imports: [
+    FormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    MatIconModule
+  ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })
 export class MainComponent {
+
+  contactForm = new FormGroup({
+    name: new FormControl("", [Validators.required]),
+    email: new FormControl( "", [Validators.required, Validators.email]),
+    msg: new FormControl("", [Validators.required])
+  })
 
 
   onSMIClick(socialMediaType: string){

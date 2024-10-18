@@ -96,6 +96,16 @@
     line-height: 1;
 }
 
+/***
+    contact
+***/
+
+
+/* .contact{
+    height: ;
+}
+ */
+
 @media (min-width: 1200px) {
     .intro{
         font-size: 4.5rem;
