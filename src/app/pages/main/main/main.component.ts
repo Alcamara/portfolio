@@ -16,6 +16,8 @@ export class MainComponent {
 
   changeSide = NgxTimelineEventChangeSide.ALL
 
+  wave = '👋🏿'
+
   events: NgxTimelineEvent[] = [
     {
       id: 1,
