@@ -31,7 +31,13 @@
             </div>
         </div>
     </section>
-    <section class="skills"></section>
+    <section class="skills">
+        <div class="row">
+            <div *ngFor="let skill of skillSection" class="col">
+                <app-skillcard [skill]="skill"></app-skillcard>
+            </div>
+        </div>
+    </section>
     <section class="job-history">
         <ngx-timeline
             [events]="events"
