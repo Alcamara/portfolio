@@ -24,21 +24,21 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="row">
             <div class="about-summary col-10">
                 <p>I'm a full stack develop base out of Minneapolis MN. Since 2023, I've enjoy design and building full stack applications</p>
             </div>
         </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="row">
             <div *ngFor="let skill of skillSection" class="col">
                 <app-skillcard [skill]="skill"></app-skillcard>
             </div>
         </div>
     </section>
-    <section class="job-history">
+    <section class="job-history" id="jobs">
         <ngx-timeline
             [events]="events"
             [changeSide]="changeSide"
@@ -47,7 +47,7 @@
         >
         </ngx-timeline>
     </section>
-    <section class="contact-me">
+    <section class="contact-me" id="contact-me">
         <div class="container">
             <div class="row">
                 <div class="col">

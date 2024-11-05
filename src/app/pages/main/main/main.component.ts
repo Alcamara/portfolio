@@ -21,13 +21,15 @@ export class MainComponent {
   skillSection = [
     {
       title: "Frontend",
-      skills: []
+      skills: ["angular", "css", "react"]
     },
     {
-      title: "Backend"
+      title: "Backend",
+      skills: ["angular", "css", "react"]
     },
     {
-      title: "Others"
+      title: "Others",
+      skills: ["angular", "css", "react"]
     }
    ]
 

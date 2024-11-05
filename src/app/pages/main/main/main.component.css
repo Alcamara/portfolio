@@ -115,6 +115,26 @@
   contact
 ***/
 
+.contact-me .col{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-me_image {
+    max-width: 536px;
+}
+
+.contact-me_image img{
+    width: 100%;
+}
+
+.contact-me_form {
+    min-width: 576px;
+    padding: 1.3rem;
+    border: 3px solid;
+    margin: auto 0;
+}
+
 
 /* .contact{
     height: ;
@@ -156,6 +176,10 @@
 	    padding: 0;
 	    border: 0;
         line-height: 1;
+    }
+
+    .contact-me .col{
+        display: flex;
     }
     
 }

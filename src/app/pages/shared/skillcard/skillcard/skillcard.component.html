@@ -3,6 +3,9 @@
     <div class="skill-cards_title">
         <h2>{{skill.title}}</h2>
     </div>
+    <div class="skill-card_body container">
+        <button type="button" *ngFor="let s of skill.skills" class="btn btn-primary">{{s}}</button>
+    </div>
 </div>
 
 
