@@ -82,7 +82,7 @@
 .about{
     font-size: 1.5rem;
     background: linear-gradient(var(--main-color), white);
-    height: 500px;
+    height: 100vh;
     padding: 1em 0;
     border-radius: .8em .8em 0 0 ;
 }
